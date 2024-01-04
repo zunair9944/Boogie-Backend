@@ -15,13 +15,11 @@ class UserOtp extends Model
         $message = "Login OTP is ".$this->otp;
         try {
   
-            // $account_sid = "AC0e9de838f1a9c0fdea308d4f2a16f92a";
-            // $auth_token = "025cd6ec820c2efb5012b99a2e5f050a";
-            // $twilio_number = "+14694253422";
+            
 
-            $account_sid = "AC0f6ca82d4dbf0e532151cce04728a545";
-            $auth_token = "68c50202ff20f08234fa531474b86d3b";
-            $twilio_number = "+18884734545";
+            $account_sid = "sid here";
+            $auth_token = "toker here";
+            $twilio_number = "number here";
 
             $client = new Client($account_sid, $auth_token);
             $client->messages->create($receiverNumber1, [
